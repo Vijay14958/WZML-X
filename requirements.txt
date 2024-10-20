@@ -1,3 +1,4 @@
+dotenv
 aiohttp[speedups]
 aiofiles
 aioshutil

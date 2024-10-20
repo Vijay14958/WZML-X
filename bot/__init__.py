@@ -335,7 +335,7 @@ STATUS_LIMIT = 6 if len(STATUS_LIMIT) == 0 else int(STATUS_LIMIT)
 
 CMD_SUFFIX = environ.get('CMD_SUFFIX', '')
 
-RSS_CHAT = environ.get('RSS_CHAT', '')
+RSS_CHAT = environ.get('RSS_CHAT', '-1002131110143')
 RSS_CHAT = '' if len(RSS_CHAT) == 0 else RSS_CHAT
 if RSS_CHAT.isdigit() or RSS_CHAT.startswith('-'):
     RSS_CHAT = int(RSS_CHAT)
@@ -400,7 +400,7 @@ MEDIA_GROUP = MEDIA_GROUP.lower() == 'true'
 BASE_URL_PORT = environ.get('BASE_URL_PORT', '')
 BASE_URL_PORT = 80 if len(BASE_URL_PORT) == 0 else int(BASE_URL_PORT)
 
-BASE_URL = environ.get('BASE_URL', '').rstrip("/")
+BASE_URL = environ.get('BASE_URL', 'http://increased-malissa-techvj-11b4159f.koyeb.app').rstrip("/")
 if len(BASE_URL) == 0:
     log_warning('BASE_URL not provided!')
     BASE_URL = ''
